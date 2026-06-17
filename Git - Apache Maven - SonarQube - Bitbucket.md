@@ -71,9 +71,8 @@ Obtain the SonarQube project URL for reviewing code quality reports and recommen
 ### Bitbucket
 
 ```
-Configure Bitbucket Pipeline
-Select the branches that should trigger pipeline execution.
 Configure the pipeline using bitbucket-pipelines.yml.
+Select the branches that should trigger pipeline execution.
 Ensure all pipeline stages execute successfully, including:
 Build
 Unit Tests
