@@ -65,7 +65,12 @@ Verify that the SonarQube web interface is accessible.
 Generate or obtain the Bitbucket Pipeline YAML configuration required for SonarQube integration.
 Add the YAML file to the Java project directory.
 Obtain the SonarQube project URL for reviewing code quality reports and recommendations.
-Bitbucket
+```
+
+
+### Bitbucket
+
+```
 Configure Bitbucket Pipeline
 Select the branches that should trigger pipeline execution.
 Configure the pipeline using bitbucket-pipelines.yml.
@@ -76,4 +81,7 @@ Package
 SonarQube Analysis
 Verify that pipeline logs are generated for every execution.
 Confirm that all jobs complete successfully and the results are visible in the Bitbucket Pipeline interface.
+
+
+
 ```
