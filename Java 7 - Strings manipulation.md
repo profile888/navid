@@ -58,7 +58,7 @@ public class A23_RemoveLettersFromString {
 
 ```
 
-### 3. List vowels and consonants in string
+### 3. List vowels and consonants in a string
 
 ```
 // input  = "  I am ^ heRe for   %% reSt # eE  of 87 my life  "
@@ -124,6 +124,35 @@ public class A35_RemoveDuplicateTokens {
 		}
 	}
 }
+
+```
+
+### 6. Reverse a given string
+
+```
+// input  = "321@olleH"
+// output = "Hello@123"
+```
+
+```
+package demo_strings;
+
+public class A13_ReverseStringBuilder {
+	public static void main(String[] args) {
+		String str = "321@olleH";
+		StringBuilder res = new StringBuilder();
+
+		for (int i = str.length() - 1; i >= 0; i--) {
+			res.append(str.charAt(i));
+		}
+
+		System.out.println(res.toString());
+	}
+}
+
+
+
+
 
 ```
 
