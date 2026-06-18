@@ -71,7 +71,43 @@ public class A11_FirstRepeatedCharacter {
 
 ```
 
+### 3. Reverse string while keeping special characters in place (using ArrayList)
 
+```
+// input  = "A$B#C"
+// output = "C$B#A"
+
+```
+
+```
+package demo_collections;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class A10_ReverseStringPreserveSpecialChars {
+
+	public static void main(String[] args) {
+		String str = "A$B#C";
+		List<Character> list = new ArrayList<>();
+
+		for (char ch : str.toCharArray())
+			list.add(ch);
+
+		List<Character> rev = new ArrayList<>(list);
+		Collections.reverse(rev);
+
+		for (int i = 0; i < list.size(); i++) {
+			if (!Character.isLetter(list.get(i)))
+				rev.set(i, list.get(i));
+		}
+
+		System.out.println(rev);
+	}
+}
+
+```
 
 
 
