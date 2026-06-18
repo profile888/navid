@@ -38,3 +38,43 @@ public class A06_CharacterFrequencyCounter {
 }
 
 ```
+
+### 2. Find first repeated character that is repeating 3 times (using HashMap)
+
+```
+// input  = "kswissk"
+// output = s 3
+```
+```
+package demo_collections;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class A11_FirstRepeatedCharacter {
+
+	public static void main(String[] args) {
+		String str = "kswissk";
+		Map<Character, Integer> map = new HashMap<>();
+
+		for (char c : str.toCharArray())
+			map.put(c, map.getOrDefault(c, 0) + 1);
+
+		for (char c : str.toCharArray()) {
+		    if (map.get(c) == 3) {
+		        System.out.println(c + " " + map.get(c));
+		        break;
+		    }
+		}
+	}
+}
+
+```
+
+
+
+
+
+
+
+
